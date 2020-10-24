@@ -7,7 +7,34 @@
     <link rel="stylesheet" href="./Css/style.css">
 </head>
 <body>
-    <h1 class="title">Js Datatable</h1>
+    <div class="container">
+        <h1 class="title">Country details</h1>
+        <div class="form-wrapper">
+            <form className="sort-form mt3">
+                <label>Sort by population:</label>
+                <select id="sort_by_population" name="sort_by_population" required="required">
+                    <option value="" selected="true"></option>
+                    <option value="Low to high">Low to high</option>
+                    <option value="High to low">High to low</option>
+                </select>              
+              </form>
+            <form>
+                <input type="text" placeholder="Search by name" id="searchInp" >
+            </form>
+        </div>
+        <table class="data-table" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Capital</th>
+                    <th>Native name</th>
+                    <th>Population</th>
+                    <th>Region</th>
+                </tr>
+            </thead>
+            <tbody class="t-body"></tbody>
+        </table>
+    </div>
     <script src="./js/index.js"></script>
 </body>
 </html>
